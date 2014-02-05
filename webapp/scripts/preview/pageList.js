@@ -59,7 +59,7 @@ PageList.prototype = domplate(
 
     getPageTitle: function(page)
     {
-        return Lib.cropString(page.title, 100);
+        return Lib.cropString(page.id, 100);
     },
 
     getPageID: function(page)
