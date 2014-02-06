@@ -197,6 +197,9 @@ Lib.fireEvent(content, "onViewerPreInit");
 harView.initialize(content);
 Lib.fireEvent(content, "onViewerInit");
 
+    if (harContent) {
+        harView.appendPreview(harContent);
+    }
 Trace.log("HarViewer; initialized OK");
 
 // ********************************************************************************************* //
